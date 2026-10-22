@@ -28,6 +28,48 @@ lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP>
 enP7s7           UP             30:c5:...         <BROADCAST,MULTICAST,UP,LOWER_UP>
 enp1s0f0np0      UP             30:...            <BROADCAST,MULTICAST,UP,LOWER_UP>
 ```
+
+Проверка скорость соединения и тип порта.
+
+```bash
+sudo ethtool enP7s7
+```
+Технический отчет о состоянии этого сетевого интерфейса
+
+```bash
+Settings for enP7s7:
+	Supported ports: [ TP ]
+	Supported link modes:   10baseT/Half 10baseT/Full
+	                        100baseT/Half 100baseT/Full
+	                        1000baseT/Full
+	                        2500baseT/Full
+	                        5000baseT/Full
+	                        10000baseT/Full
+	Supported pause frame use: Symmetric
+	Supports auto-negotiation: Yes
+	Supported FEC modes: Not reported
+	Advertised link modes:  10baseT/Half 10baseT/Full
+	                        100baseT/Half 100baseT/Full
+	                        1000baseT/Full
+	                        2500baseT/Full
+	                        5000baseT/Full
+	                        10000baseT/Full
+	Advertised pause frame use: Symmetric
+	Advertised auto-negotiation: Yes
+	Advertised FEC modes: Not reported
+	Speed: 10000Mb/s
+	Duplex: Full
+	Auto-negotiation: on
+	Port: Twisted Pair
+	PHYAD: 0
+	Transceiver: internal
+	MDI-X: Unknown
+	Supports Wake-on: d
+	Wake-on: d
+	Current message level: 0x00000007 (7)
+			       drv probe link
+	Link detected: yes
+```
 ---
 
 ## Часть 1: Настройка статического IP-адреса через Netplan
