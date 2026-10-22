@@ -3,6 +3,12 @@
 *   **Сервер (DGX Spark, Linux)**: Запускает Qwen3.8-27B с помощью vLLM, который создает **OpenAI-совместимый API** (обычно на порту `8000`).
 *   **Клиент (Geekom A8 Max, Windows)**: Запускает Hermes Agent, который подключается к этому удаленному API, как к любому другому облачному провайдеру.
 
+[Начните создавать AI-агентов на DGX Spark](https://build.nvidia.com/spark)
+
+[Обслуживайте LLM с vLLM на одном устройстве](https://build.nvidia.com/station/vllm/choose-recipe)
+
+[Начальная настройка — первая загрузка](https://docs.nvidia.com/dgx/dgx-spark/first-boot.html)
+
 ---
 
 ### Шаг 1: Развертывание Qwen3.8-27B на DGX Spark
